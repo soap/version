@@ -54,12 +54,12 @@ class Version
      * @param Absorb|null    $absorb
      */
     public function __construct(
-        Config $config = null,
-        Git $git = null,
-        Increment $increment = null,
-        Yaml $yaml = null,
-        Absorb $absorb = null,
-        Timestamp $timestamp = null
+        ?Config $config = null,
+        ?Git $git = null,
+        ?Increment $increment = null,
+        ?Yaml $yaml = null,
+        ?Absorb $absorb = null,
+        ?Timestamp $timestamp = null
     ) {
         $this->instantiate($config, $git, $increment, $yaml, $absorb, $timestamp);
     }
